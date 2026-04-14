@@ -23,7 +23,7 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
       <Link to={`/producto/${product.id}`}>
-        <div className="relative aspect-square overflow-hidden">
+        <div className="relative aspect-square overflow-hidden ">
 
           {/* 🖼 Imagen segura */}
           <img
