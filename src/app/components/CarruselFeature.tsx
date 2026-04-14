@@ -138,30 +138,33 @@ export const CarruselFeature = () => {
         "
       >
         {looped.map((item, i) => (
-          <div
-            key={i}
-            className="
-              min-w-[250px] sm:min-w-[280px]
-              flex-shrink-0
-              text-center
-              px-4
-            "
-          >
-            <div
-              className={`w-16 h-16 ${item.bg} rounded-2xl flex items-center justify-center mx-auto mb-4`}
-            >
-              {item.icon}
-            </div>
+  <div
+    key={i}
+    className="
+      min-w-[280px]
+      flex-shrink-0
+      px-6
+      flex items-center gap-4
+    "
+  >
+    {/* ICONO */}
+    <div className="flex-shrink-0">
+      <div className="w-12 h-12 flex items-center justify-center rounded-full border border-neutral-300">
+        {item.icon}
+      </div>
+    </div>
 
-            <h3 className="font-semibold text-neutral-900 mb-2">
-              {item.title}
-            </h3>
-
-            <p className="text-sm text-neutral-600">
-              {item.desc}
-            </p>
-          </div>
-        ))}
+    {/* TEXTO */}
+    <div className="text-left">
+      <h3 className="text-base font-semibold text-neutral-900 tracking-wide">
+        {item.title}
+      </h3>
+      <p className="text-sm text-neutral-500">
+        {item.desc}
+      </p>
+    </div>
+  </div>
+))}
       </div>
     </section>
   );

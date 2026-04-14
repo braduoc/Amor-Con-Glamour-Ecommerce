@@ -18,8 +18,11 @@ export function Header() {
 
         <div className="flex items-center justify-between h-16">
 
-          
-
+          <img
+            src="/images/logo.jpeg"
+            alt="logo"
+            className="h-16 w-auto object-contain"
+          />
           {/* DESKTOP NAV */}
           <nav className="hidden md:flex items-center space-x-6">
 
@@ -81,7 +84,7 @@ export function Header() {
               </Link>
             ))}
 
-            
+
 
           </nav>
         )}
